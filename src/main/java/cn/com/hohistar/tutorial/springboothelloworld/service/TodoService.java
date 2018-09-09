@@ -19,4 +19,27 @@ public class TodoService {
 
         return todoRepos.findAll();
     }
+
+    @Transactional
+    public void create(Todo todo) {
+
+        todoRepos.create(todo);
+
+    }
+
+    @Transactional
+    public void update(Todo todo) {
+
+        todoRepos.update(todo);
+
+    }
+
+
+    @Transactional
+    public void delete(Todo todo) {
+
+        todoRepos.delete(todo.getId());
+
+    }
+
 }

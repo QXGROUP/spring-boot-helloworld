@@ -3,6 +3,7 @@ package cn.com.hohistar.tutorial.springboothelloworld.model;
 public class Todo {
 
     private Long id;
+
     private String title;
     private String desc;
 
